@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RandomRoomSizer : MonoBehaviour
+public class RandomRoomSizer2 : MonoBehaviour
 {
 	public int lowerBounds = 16;
 	public int upperBounds = 40;
