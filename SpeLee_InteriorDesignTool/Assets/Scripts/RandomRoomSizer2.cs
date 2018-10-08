@@ -28,21 +28,6 @@ public class RandomRoomSizer2 : MonoBehaviour
 	}
 
 	void FixedUpdate(){
-		//  Implement an implosion house generation method
-	}
-	
-	void OnCollisionEnter(Collision c)
-	{
-		// force is how forcefully we will push the room away from the other room.
-		float force = 3000;
-		
-		// Calculate Angle Between the collision point and the other room
-		Vector3 dir = c.contacts[0].point - transform.position;
-		// We then get the opposite (-Vector3) and normalize it
-		dir = -dir.normalized;
-		// And finally we add force in the direction of dir and multiply it by force. 
-		// This will push back the other room
-		GetComponent<Rigidbody>().AddForce(dir*force);
 		
 	}
 }
