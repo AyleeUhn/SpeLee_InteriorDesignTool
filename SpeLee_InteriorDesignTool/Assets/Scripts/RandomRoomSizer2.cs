@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class RandomRoomSizer2 : MonoBehaviour
 {
+
+	public Rigidbody rb;
+	public int stepBounds = 4;
+	private int step;
+	
 	public int lowerBounds = 16;
 	public int upperBounds = 40;
 
@@ -13,6 +18,9 @@ public class RandomRoomSizer2 : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+
+		rb = GetComponent<Rigidbody>();
+		
 		int roomWidth = Random.Range(lowerBounds, upperBounds);
 		if (lowerBounds < (roomWidth/2))
 		{
@@ -23,11 +31,22 @@ public class RandomRoomSizer2 : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
+
 		
 	}
 
-	void FixedUpdate(){
+	void FixedUpdate()
+	{
+		if (rb.drag != 0)
+			step--;
+		
+		if (rb.drag > 0 && step < 0)
+		{
+			rb.drag--;
+			step = stepBounds;
+		}
 		
 	}
 }

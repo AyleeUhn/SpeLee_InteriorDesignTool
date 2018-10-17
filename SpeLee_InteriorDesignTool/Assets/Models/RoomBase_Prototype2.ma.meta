@@ -73,6 +73,25 @@ ModelImporter:
     100134: transform7
     100136: transform8
     100138: transform9
+    100140: Door_EN 1
+    100142: Door_EN 2
+    100144: Door_ES 1
+    100146: Door_ES 2
+    100148: Door_NE 1
+    100150: Door_NE 2
+    100152: Door_NW 1
+    100154: Door_NW 2
+    100156: Door_SE 1
+    100158: Door_SE 2
+    100160: Door_SW 1
+    100162: Door_SW 2
+    100164: Door_WN 1
+    100166: Door_WN 2
+    100168: Door_WS 1
+    100170: Door_WS 2
+    100172: PrivateRoomFrame
+    100174: PrivateRoomFrame1
+    100176: PrivateRoomFrame2
     400000: Door_EN
     400002: Door_ES
     400004: Door_NE
@@ -143,7 +162,28 @@ ModelImporter:
     400134: transform7
     400136: transform8
     400138: transform9
+    400140: Door_EN 1
+    400142: Door_EN 2
+    400144: Door_ES 1
+    400146: Door_ES 2
+    400148: Door_NE 1
+    400150: Door_NE 2
+    400152: Door_NW 1
+    400154: Door_NW 2
+    400156: Door_SE 1
+    400158: Door_SE 2
+    400160: Door_SW 1
+    400162: Door_SW 2
+    400164: Door_WN 1
+    400166: Door_WN 2
+    400168: Door_WS 1
+    400170: Door_WS 2
+    400172: PrivateRoomFrame
+    400174: PrivateRoomFrame1
+    400176: PrivateRoomFrame2
     2100000: lambert1
+    2100002: RoomFrame
+    2100004: blinn2
     2300000: Door_EN
     2300002: Door_ES
     2300004: Door_NE
@@ -162,6 +202,25 @@ ModelImporter:
     2300030: polySurface4
     2300032: polySurface6
     2300034: //RootNode
+    2300036: Door_EN 1
+    2300038: Door_EN 2
+    2300040: Door_ES 1
+    2300042: Door_ES 2
+    2300044: Door_NE 1
+    2300046: Door_NE 2
+    2300048: Door_NW 1
+    2300050: Door_NW 2
+    2300052: Door_SE 1
+    2300054: Door_SE 2
+    2300056: Door_SW 1
+    2300058: Door_SW 2
+    2300060: Door_WN 1
+    2300062: Door_WN 2
+    2300064: Door_WS 1
+    2300066: Door_WS 2
+    2300068: PrivateRoomFrame
+    2300070: PrivateRoomFrame1
+    2300072: PrivateRoomFrame2
     3300000: Door_EN
     3300002: Door_ES
     3300004: Door_NE
@@ -180,6 +239,25 @@ ModelImporter:
     3300030: polySurface4
     3300032: polySurface6
     3300034: //RootNode
+    3300036: Door_EN 1
+    3300038: Door_EN 2
+    3300040: Door_ES 1
+    3300042: Door_ES 2
+    3300044: Door_NE 1
+    3300046: Door_NE 2
+    3300048: Door_NW 1
+    3300050: Door_NW 2
+    3300052: Door_SE 1
+    3300054: Door_SE 2
+    3300056: Door_SW 1
+    3300058: Door_SW 2
+    3300060: Door_WN 1
+    3300062: Door_WN 2
+    3300064: Door_WS 1
+    3300066: Door_WS 2
+    3300068: PrivateRoomFrame
+    3300070: PrivateRoomFrame1
+    3300072: PrivateRoomFrame2
     4300000: Door_ES
     4300002: Door_EN
     4300004: Door_NE
@@ -198,6 +276,24 @@ ModelImporter:
     4300030: polySurface19
     4300032: polySurface20
     4300034: PrivateRoomFrame
+    4300036: PrivateRoomFrame1
+    4300038: Door_ES
+    4300040: Door_EN
+    4300042: Door_NE
+    4300044: Door_NW
+    4300046: Door_SW
+    4300048: Door_SE
+    4300050: Door_WN
+    4300052: Door_WS
+    4300054: PrivateRoomFrame2
+    4300056: Door_ES
+    4300058: Door_EN
+    4300060: Door_NE
+    4300062: Door_NW
+    4300064: Door_SW
+    4300066: Door_SE
+    4300068: Door_WN
+    4300070: Door_WS
   externalObjects: {}
   materials:
     importMaterials: 1

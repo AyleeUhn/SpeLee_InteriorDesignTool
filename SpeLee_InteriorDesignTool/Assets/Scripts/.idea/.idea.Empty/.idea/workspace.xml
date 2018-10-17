@@ -11,7 +11,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RoomGravityCollector.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RoomGravityCollector.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RoomGravityCollector.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -26,13 +26,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="RandomRoomSizer2.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RandomRoomSizer2.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <folding>
+                <marker date="1539800845182" expanded="false" signature="6:78" ph="..." />
+                <marker date="1539800845182" expanded="true" signature="125:868" ph="{...}" />
+                <marker date="1539800845182" expanded="true" signature="358:663" ph="{...}" />
+                <marker date="1539800845182" expanded="true" signature="492:532" ph="{...}" />
+                <marker date="1539800845182" expanded="true" signature="717:727" ph="{...}" />
+                <marker date="1539800845182" expanded="true" signature="748:866" ph="{...}" />
+                <marker date="1539800845182" expanded="true" signature="816:860" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/RoomGravityCollector.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/RoomGravityCollector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RandomRoomSizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RandomRoomSizer2.cs" root0="SKIP_INSPECTION" />
   </component>
@@ -40,8 +58,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/RandomRoomSizer.cs" />
-        <option value="$PROJECT_DIR$/RandomRoomSizer2.cs" />
         <option value="$PROJECT_DIR$/RoomGravityCollector.cs" />
+        <option value="$PROJECT_DIR$/RandomRoomSizer2.cs" />
       </list>
     </option>
   </component>
@@ -63,11 +81,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -102,11 +120,12 @@
       <workItem from="1538588643482" duration="2860000" />
       <workItem from="1539020724088" duration="125000" />
       <workItem from="1539020893576" duration="2023000" />
+      <workItem from="1539800309009" duration="1132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7138000" />
+    <option name="totallyTimeSpent" value="8270000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -125,16 +144,16 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Unit Tests" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="NuGet" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26449275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26811594" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -152,20 +171,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/RoomGravityCollector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <marker date="1539022330441" expanded="true" signature="6:78" ph="..." />
+            <marker date="1539022330441" expanded="true" signature="129:670" ph="{...}" />
+            <marker date="1539022330441" expanded="true" signature="258:668" ph="{...}" />
+            <marker date="1539022330441" expanded="true" signature="346:665" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RandomRoomSizer.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <marker date="1538590401749" expanded="false" signature="6:78" ph="..." />
-            <marker date="1538590401749" expanded="true" signature="124:1222" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="285:552" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="381:421" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="607:614" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="635:692" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="730:1220" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="1047:1165" ph="/* And finally we add force in the direction of dir and multiply it by force. ... */" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -180,16 +202,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <marker date="1538590401749" expanded="false" signature="6:78" ph="..." />
-            <marker date="1538590401749" expanded="true" signature="124:1222" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="285:552" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="381:421" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="607:614" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="635:692" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="730:1220" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="1047:1165" ph="/* And finally we add force in the direction of dir and multiply it by force. ... */" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -204,16 +216,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-          <folding>
-            <marker date="1538590401749" expanded="false" signature="6:78" ph="..." />
-            <marker date="1538590401749" expanded="true" signature="124:1222" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="285:552" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="381:421" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="607:614" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="635:692" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="730:1220" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="1047:1165" ph="/* And finally we add force in the direction of dir and multiply it by force. ... */" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -221,23 +223,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <marker date="1538590401749" expanded="false" signature="6:78" ph="..." />
-            <marker date="1538590401749" expanded="true" signature="124:1222" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="285:552" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="381:421" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="607:614" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="635:692" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="730:1220" ph="{...}" />
-            <marker date="1538590401749" expanded="true" signature="1047:1165" ph="/* And finally we add force in the direction of dir and multiply it by force. ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandomRoomSizer2.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -250,6 +235,22 @@
             <marker date="1539022330441" expanded="true" signature="129:670" ph="{...}" />
             <marker date="1539022330441" expanded="true" signature="258:668" ph="{...}" />
             <marker date="1539022330441" expanded="true" signature="346:665" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandomRoomSizer2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding>
+            <marker date="1539800845182" expanded="false" signature="6:78" ph="..." />
+            <marker date="1539800845182" expanded="true" signature="125:868" ph="{...}" />
+            <marker date="1539800845182" expanded="true" signature="358:663" ph="{...}" />
+            <marker date="1539800845182" expanded="true" signature="492:532" ph="{...}" />
+            <marker date="1539800845182" expanded="true" signature="717:727" ph="{...}" />
+            <marker date="1539800845182" expanded="true" signature="748:866" ph="{...}" />
+            <marker date="1539800845182" expanded="true" signature="816:860" ph="{...}" />
           </folding>
         </state>
       </provider>
