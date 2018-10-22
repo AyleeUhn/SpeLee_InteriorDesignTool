@@ -92,6 +92,8 @@ ModelImporter:
     100172: PrivateRoomFrame
     100174: PrivateRoomFrame1
     100176: PrivateRoomFrame2
+    100178: group
+    100180: group1
     400000: Door_EN
     400002: Door_ES
     400004: Door_NE
@@ -181,6 +183,8 @@ ModelImporter:
     400172: PrivateRoomFrame
     400174: PrivateRoomFrame1
     400176: PrivateRoomFrame2
+    400178: group
+    400180: group1
     2100000: lambert1
     2100002: RoomFrame
     2100004: blinn2

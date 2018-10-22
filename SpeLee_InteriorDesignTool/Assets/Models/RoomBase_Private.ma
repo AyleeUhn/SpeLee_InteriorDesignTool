@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
-//Name: RoomBase_Prototype2.ma
-//Last modified: Mon, Oct 22, 2018 10:47:27 AM
+//Name: RoomBase_Private.ma
+//Last modified: Mon, Oct 22, 2018 10:48:13 AM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -1781,4 +1781,4 @@ connectAttr "pasted__blinn3.msg" ":defaultShaderList1.s" -na;
 connectAttr "pasted__RoomFrame2.msg" ":defaultShaderList1.s" -na;
 connectAttr "pasted__blinn4.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of RoomBase_Prototype2.ma
+// End of RoomBase_Private.ma
