@@ -1,54 +1,31 @@
 fileFormatVersion: 2
-guid: cdfc747a3cb7116488503cb1318c9d80
+guid: 1d925b13f4c23a44b92022b9a990093a
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Door_EN
-    100002: Door_ES
-    100004: Door_NE
-    100006: Door_NW
-    100008: Door_SE
-    100010: Door_SW
-    100012: Door_WN
-    100014: Door_WS
-    100016: group
-    100018: group1
-    100020: PrivateRoomFrame
-    100022: //RootNode
-    400000: Door_EN
-    400002: Door_ES
-    400004: Door_NE
-    400006: Door_NW
-    400008: Door_SE
-    400010: Door_SW
-    400012: Door_WN
-    400014: Door_WS
-    400016: group
-    400018: group1
-    400020: PrivateRoomFrame
-    400022: //RootNode
+    100000: Door_E
+    100002: Door_N
+    100004: Door_S
+    100006: Door_W
+    100008: //RootNode
+    400000: Door_E
+    400002: Door_N
+    400004: Door_S
+    400006: Door_W
+    400008: //RootNode
     2100000: RoomFrame
     2100002: blinn2
-    4300000: PrivateRoomFrame
-    4300002: Door_ES
-    4300004: Door_EN
-    4300006: Door_NE
-    4300008: Door_NW
-    4300010: Door_SW
-    4300012: Door_SE
-    4300014: Door_WN
-    4300016: Door_WS
+    4300000: Social_ServiceRoomFrame
+    4300002: Door_E
+    4300004: Door_N
+    4300006: Door_S
+    4300008: Door_W
     9500000: //RootNode
-    13700000: Door_EN
-    13700002: Door_ES
-    13700004: Door_NE
-    13700006: Door_NW
-    13700008: Door_SE
-    13700010: Door_SW
-    13700012: Door_WN
-    13700014: Door_WS
-    13700016: PrivateRoomFrame
-    13700018: //RootNode
+    13700000: Door_E
+    13700002: Door_N
+    13700004: Door_S
+    13700006: Door_W
+    13700008: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cdfc747a3cb7116488503cb1318c9d80
+guid: 4e96638989d63f342855abf0d17ee0fe
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -11,10 +11,7 @@ ModelImporter:
     100010: Door_SW
     100012: Door_WN
     100014: Door_WS
-    100016: group
-    100018: group1
-    100020: PrivateRoomFrame
-    100022: //RootNode
+    100016: //RootNode
     400000: Door_EN
     400002: Door_ES
     400004: Door_NE
@@ -23,10 +20,7 @@ ModelImporter:
     400010: Door_SW
     400012: Door_WN
     400014: Door_WS
-    400016: group
-    400018: group1
-    400020: PrivateRoomFrame
-    400022: //RootNode
+    400016: //RootNode
     2100000: RoomFrame
     2100002: blinn2
     4300000: PrivateRoomFrame
@@ -47,8 +41,7 @@ ModelImporter:
     13700010: Door_SW
     13700012: Door_WN
     13700014: Door_WS
-    13700016: PrivateRoomFrame
-    13700018: //RootNode
+    13700016: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
