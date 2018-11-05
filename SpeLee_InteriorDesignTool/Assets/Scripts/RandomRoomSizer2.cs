@@ -19,15 +19,22 @@ public class RandomRoomSizer2 : MonoBehaviour
 	void Start ()
 	{
 
-		rb = GetComponent<Rigidbody>();
+		// rb = GetComponent<Rigidbody>();
 		
 		int roomWidth = Random.Range(lowerBounds, upperBounds);
 		if (lowerBounds < (roomWidth/2))
 		{
 			lowerBounds = (roomWidth/2);
 		}
+
 		int roomLength = Random.Range(lowerBounds, upperBounds);
-		transform.localScale = new Vector3( roomWidth , 18 , roomLength );
+		if (roomWidth * 2 > roomLength)
+		{
+			
+		}
+		roomLength = Random.Range(lowerBounds, upperBounds);
+		transform.localScale = new Vector3( roomWidth , 1 , roomLength );
+		transform.position = new Vector3(0,0,(-roomLength));
 	}
 	
 	// Update is called once per frame
@@ -39,14 +46,14 @@ public class RandomRoomSizer2 : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		if (rb.drag != 0)
+		/*if (rb.drag != 0)
 			step--;
 		
 		if (rb.drag > 0 && step < 0)
 		{
 			rb.drag--;
 			step = stepBounds;
-		}
+		}*/
 		
 	}
 }
