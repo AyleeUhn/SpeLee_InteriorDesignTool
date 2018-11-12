@@ -199,6 +199,10 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &887227186 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: d77c053b192eb54489046b4301492087, type: 3}
+  m_PrefabInternal: {fileID: 1999631483}
 --- !u!1 &979189387
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +370,10 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1486939700 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100004, guid: d77c053b192eb54489046b4301492087, type: 3}
+  m_PrefabInternal: {fileID: 1999631483}
 --- !u!1 &1607725423
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +455,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 76.62, y: 0, z: 0}
+--- !u!1 &1696895902 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100006, guid: d77c053b192eb54489046b4301492087, type: 3}
+  m_PrefabInternal: {fileID: 1999631483}
+--- !u!1 &1718400028 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: d77c053b192eb54489046b4301492087, type: 3}
+  m_PrefabInternal: {fileID: 1999631483}
 --- !u!1 &1750285431
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,8 +560,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   stepBounds: 4
-  lowerBounds: 4
-  upperBounds: 20
+  lowerBounds: 1
+  upperBounds: 10
+  NorthDoor: {fileID: 1696895902}
+  EastDoor: {fileID: 1718400028}
+  SouthDoor: {fileID: 887227186}
+  WestDoor: {fileID: 1486939700}
 --- !u!1001 &1999631483
 Prefab:
   m_ObjectHideFlags: 0
@@ -808,6 +828,26 @@ Prefab:
     - target: {fileID: 13700006, guid: d77c053b192eb54489046b4301492087, type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[8]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: d77c053b192eb54489046b4301492087, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[8]
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: d77c053b192eb54489046b4301492087, type: 3}
+      propertyPath: m_Name
+      value: Door_Ea
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d77c053b192eb54489046b4301492087, type: 3}
+      propertyPath: m_Name
+      value: Door_So
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: d77c053b192eb54489046b4301492087, type: 3}
+      propertyPath: m_Name
+      value: Door_We
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: d77c053b192eb54489046b4301492087, type: 3}
+      propertyPath: m_Name
+      value: Door_No
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d77c053b192eb54489046b4301492087, type: 3}
