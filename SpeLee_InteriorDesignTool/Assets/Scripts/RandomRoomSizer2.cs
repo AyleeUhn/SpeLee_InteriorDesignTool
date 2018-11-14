@@ -20,6 +20,11 @@ public class RandomRoomSizer2 : MonoBehaviour
 	public GameObject EastDoor;
 	public GameObject SouthDoor;
 	public GameObject WestDoor;
+	
+	public GameObject NorthWalker;
+    public GameObject EastWalker;
+    public GameObject SouthWalker;
+    public GameObject WestWalker;
 
 	private SkinnedMeshRenderer NDBlend;
 	private SkinnedMeshRenderer EDBlend;
@@ -45,6 +50,11 @@ public class RandomRoomSizer2 : MonoBehaviour
 		GameObject eastDoor = EastDoor;
 		GameObject southDoor = SouthDoor;
 		GameObject westDoor = WestDoor;
+		
+		GameObject northWalker = NorthWalker;
+        GameObject eastWalker = EastWalker;
+        GameObject southWalker = SouthWalker;
+        GameObject westWalker = WestWalker;
 
 		// rb = GetComponent<Rigidbody>();
 		
@@ -65,9 +75,14 @@ public class RandomRoomSizer2 : MonoBehaviour
 		sMR.SetBlendShapeWeight(8, roomWidth*10);
 		NDBlend.SetBlendShapeWeight(8, roomWidth * 10);
 		sMR.SetBlendShapeWeight(9, roomLength*10);
-		eastDoor.sMR.SetBlendShapeWeight(9, roomLength * 10);
+		EDBlend.SetBlendShapeWeight(9, roomLength * 10);
 
-		//transform.position = new Vector3(0,0,(/*(*/roomLength/* * 14) - 100*/));
+		//  Average Door Frames to center walker position for accurate walking behavior
+
+		
+		northWalker.transform.position += (Vector3.forward * roomWidth) * 10;
+		eastWalker.transform.position += (Vector3.right * roomLength) * 10;
+		
 	}
 	
 	// Update is called once per frame

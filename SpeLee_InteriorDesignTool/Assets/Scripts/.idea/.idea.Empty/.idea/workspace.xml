@@ -11,44 +11,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RoomGravityCollector.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RoomGravityCollector.cs">
+      <file leaf-file-name="RandomRoomSizer2.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RandomRoomSizer2.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="638">
+              <caret line="80" column="74" selection-start-line="80" selection-start-column="74" selection-end-line="80" selection-end-column="74" />
               <folding>
-                <marker date="1539022330441" expanded="true" signature="6:78" ph="..." />
-                <marker date="1539022330441" expanded="true" signature="129:670" ph="{...}" />
-                <marker date="1539022330441" expanded="true" signature="258:668" ph="{...}" />
-                <marker date="1539022330441" expanded="true" signature="346:665" ph="{...}" />
+                <marker date="1542222904317" expanded="false" signature="6:78" ph="..." />
+                <marker date="1542222904317" expanded="true" signature="125:2397" ph="{...}" />
+                <marker date="1542222904317" expanded="true" signature="296:347" ph="/* private int roomWidth; ... */" />
+                <marker date="1542222904317" expanded="true" signature="773:1065" ph="{...}" />
+                <marker date="1542222904317" expanded="true" signature="1114:2188" ph="{...}" />
+                <marker date="1542222904317" expanded="true" signature="1568:1608" ph="{...}" />
+                <marker date="1542222904317" expanded="true" signature="1702:1714" ph="{...}" />
+                <marker date="1542222904317" expanded="true" signature="1772:1852" ph="/* transform.localScale = new Vector3( roomWidth , 1 , roomLength ); ... */" />
+                <marker date="1542222904317" expanded="true" signature="2242:2252" ph="{...}" />
+                <marker date="1542222904317" expanded="true" signature="2273:2395" ph="{...}" />
+                <marker date="1542222904317" expanded="true" signature="2279:2389" ph="/* if (rb.drag != 0) ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomRoomSizer2.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RandomRoomSizer2.cs">
+      <file leaf-file-name="WalkerAI.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WalkerAI.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="36" column="63" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="36" selection-end-column="63" />
-              <folding>
-                <marker date="1542051312772" expanded="false" signature="6:78" ph="..." />
-                <marker date="1542051312772" expanded="true" signature="125:2023" ph="{...}" />
-                <marker date="1542051312772" expanded="true" signature="296:347" ph="/* private int roomWidth; ... */" />
-                <marker date="1542051312772" expanded="true" signature="636:928" ph="{...}" />
-                <marker date="1542051312772" expanded="true" signature="977:1814" ph="{...}" />
-                <marker date="1542051312772" expanded="true" signature="1254:1294" ph="{...}" />
-                <marker date="1542051312772" expanded="true" signature="1388:1400" ph="{...}" />
-                <marker date="1542051312772" expanded="true" signature="1458:1538" ph="/* transform.localScale = new Vector3( roomWidth , 1 , roomLength ); ... */" />
-                <marker date="1542051312772" expanded="true" signature="1868:1878" ph="{...}" />
-                <marker date="1542051312772" expanded="true" signature="1899:2021" ph="{...}" />
-                <marker date="1542051312772" expanded="true" signature="1905:2015" ph="/* if (rb.drag != 0) ... */" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Door</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Walker</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -64,6 +66,7 @@
         <option value="$PROJECT_DIR$/RandomRoomSizer.cs" />
         <option value="$PROJECT_DIR$/RoomGravityCollector.cs" />
         <option value="$PROJECT_DIR$/RandomRoomSizer2.cs" />
+        <option value="$PROJECT_DIR$/WalkerAI.cs" />
       </list>
     </option>
   </component>
@@ -73,7 +76,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="1537" />
     <option name="height" value="1047" />
@@ -84,11 +87,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Loading solution..." type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -126,11 +138,13 @@
       <workItem from="1539800309009" duration="1132000" />
       <workItem from="1542047709810" duration="1703000" />
       <workItem from="1542049512443" duration="1799000" />
+      <workItem from="1542220786925" duration="449000" />
+      <workItem from="1542221710526" duration="1774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11772000" />
+    <option name="totallyTimeSpent" value="13995000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -142,7 +156,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1537" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -154,7 +168,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="NuGet" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25727826" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08955224" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -192,20 +206,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RandomRoomSizer2.cs">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="67" column="56" lean-forward="true" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
+          <folding>
+            <marker date="1542222904317" expanded="false" signature="6:78" ph="..." />
+            <marker date="1542222904317" expanded="true" signature="125:2397" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="296:347" ph="/* private int roomWidth; ... */" />
+            <marker date="1542222904317" expanded="true" signature="773:1065" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1114:2188" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1568:1608" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1702:1714" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1772:1852" ph="/* transform.localScale = new Vector3( roomWidth , 1 , roomLength ); ... */" />
+            <marker date="1542222904317" expanded="true" signature="2242:2252" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="2273:2395" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="2279:2389" ph="/* if (rb.drag != 0) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RoomGravityCollector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <marker date="1539022330441" expanded="true" signature="6:78" ph="..." />
+            <marker date="1539022330441" expanded="true" signature="129:670" ph="{...}" />
+            <marker date="1539022330441" expanded="true" signature="258:668" ph="{...}" />
+            <marker date="1539022330441" expanded="true" signature="346:665" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandomRoomSizer2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="63" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="36" selection-end-column="63" />
+          <folding>
+            <marker date="1542222904317" expanded="false" signature="6:78" ph="..." />
+            <marker date="1542222904317" expanded="true" signature="125:2397" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="296:347" ph="/* private int roomWidth; ... */" />
+            <marker date="1542222904317" expanded="true" signature="773:1065" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1114:2188" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1568:1608" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1702:1714" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1772:1852" ph="/* transform.localScale = new Vector3( roomWidth , 1 , roomLength ); ... */" />
+            <marker date="1542222904317" expanded="true" signature="2242:2252" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="2273:2395" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="2279:2389" ph="/* if (rb.drag != 0) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RoomGravityCollector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <marker date="1539022330441" expanded="true" signature="6:78" ph="..." />
+            <marker date="1539022330441" expanded="true" signature="129:670" ph="{...}" />
+            <marker date="1539022330441" expanded="true" signature="258:668" ph="{...}" />
+            <marker date="1539022330441" expanded="true" signature="346:665" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandomRoomSizer2.cs">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
           <folding>
-            <marker date="1542051312772" expanded="false" signature="6:78" ph="..." />
-            <marker date="1542051312772" expanded="true" signature="125:2023" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="296:347" ph="/* private int roomWidth; ... */" />
-            <marker date="1542051312772" expanded="true" signature="636:928" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="977:1814" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1254:1294" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1388:1400" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1458:1538" ph="/* transform.localScale = new Vector3( roomWidth , 1 , roomLength ); ... */" />
-            <marker date="1542051312772" expanded="true" signature="1868:1878" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1899:2021" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1905:2015" ph="/* if (rb.drag != 0) ... */" />
+            <marker date="1542222904317" expanded="false" signature="6:78" ph="..." />
+            <marker date="1542222904317" expanded="true" signature="125:2397" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="296:347" ph="/* private int roomWidth; ... */" />
+            <marker date="1542222904317" expanded="true" signature="773:1065" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1114:2188" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1568:1608" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1702:1714" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1772:1852" ph="/* transform.localScale = new Vector3( roomWidth , 1 , roomLength ); ... */" />
+            <marker date="1542222904317" expanded="true" signature="2242:2252" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="2273:2395" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="2279:2389" ph="/* if (rb.drag != 0) ... */" />
           </folding>
         </state>
       </provider>
@@ -228,17 +308,17 @@
         <state relative-caret-position="135">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
-            <marker date="1542051312772" expanded="false" signature="6:78" ph="..." />
-            <marker date="1542051312772" expanded="true" signature="125:2023" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="296:347" ph="/* private int roomWidth; ... */" />
-            <marker date="1542051312772" expanded="true" signature="636:928" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="977:1814" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1254:1294" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1388:1400" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1458:1538" ph="/* transform.localScale = new Vector3( roomWidth , 1 , roomLength ); ... */" />
-            <marker date="1542051312772" expanded="true" signature="1868:1878" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1899:2021" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1905:2015" ph="/* if (rb.drag != 0) ... */" />
+            <marker date="1542222904317" expanded="false" signature="6:78" ph="..." />
+            <marker date="1542222904317" expanded="true" signature="125:2397" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="296:347" ph="/* private int roomWidth; ... */" />
+            <marker date="1542222904317" expanded="true" signature="773:1065" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1114:2188" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1568:1608" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1702:1714" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1772:1852" ph="/* transform.localScale = new Vector3( roomWidth , 1 , roomLength ); ... */" />
+            <marker date="1542222904317" expanded="true" signature="2242:2252" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="2273:2395" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="2279:2389" ph="/* if (rb.drag != 0) ... */" />
           </folding>
         </state>
       </provider>
@@ -313,21 +393,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RandomRoomSizer2.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="36" column="63" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="36" selection-end-column="63" />
+        <state relative-caret-position="638">
+          <caret line="80" column="74" selection-start-line="80" selection-start-column="74" selection-end-line="80" selection-end-column="74" />
           <folding>
-            <marker date="1542051312772" expanded="false" signature="6:78" ph="..." />
-            <marker date="1542051312772" expanded="true" signature="125:2023" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="296:347" ph="/* private int roomWidth; ... */" />
-            <marker date="1542051312772" expanded="true" signature="636:928" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="977:1814" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1254:1294" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1388:1400" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1458:1538" ph="/* transform.localScale = new Vector3( roomWidth , 1 , roomLength ); ... */" />
-            <marker date="1542051312772" expanded="true" signature="1868:1878" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1899:2021" ph="{...}" />
-            <marker date="1542051312772" expanded="true" signature="1905:2015" ph="/* if (rb.drag != 0) ... */" />
+            <marker date="1542222904317" expanded="false" signature="6:78" ph="..." />
+            <marker date="1542222904317" expanded="true" signature="125:2397" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="296:347" ph="/* private int roomWidth; ... */" />
+            <marker date="1542222904317" expanded="true" signature="773:1065" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1114:2188" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1568:1608" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1702:1714" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="1772:1852" ph="/* transform.localScale = new Vector3( roomWidth , 1 , roomLength ); ... */" />
+            <marker date="1542222904317" expanded="true" signature="2242:2252" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="2273:2395" ph="{...}" />
+            <marker date="1542222904317" expanded="true" signature="2279:2389" ph="/* if (rb.drag != 0) ... */" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WalkerAI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
