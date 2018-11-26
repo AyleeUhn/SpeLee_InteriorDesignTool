@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   self: {fileID: 7341119}
-  direction: {x: 0, y: 0, z: 0}
+  room: {fileID: 1320160691}
 --- !u!1 &146347837 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1058063894117802, guid: fec09d26bcebd9940bf3011480509aaf,
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   self: {fileID: 146347837}
-  direction: {x: 0, y: 0, z: 0}
+  room: {fileID: 1320160691}
 --- !u!1 &688089702
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   self: {fileID: 1006128663}
-  direction: {x: 0, y: 0, z: 0}
+  room: {fileID: 1320160691}
 --- !u!1 &1007503081
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,6 +420,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1320160691 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1639677768837210, guid: fec09d26bcebd9940bf3011480509aaf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1999631483}
+--- !u!65 &1320160696
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1320160691}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14, y: 18, z: 14}
+  m_Center: {x: -7, y: 9, z: 7}
 --- !u!1 &1607725423
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,4 +657,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   self: {fileID: 2107519292}
-  direction: {x: 0, y: 0, z: 0}
+  room: {fileID: 1320160691}

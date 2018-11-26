@@ -5,6 +5,7 @@ using UnityEngine;
 public class RandomRoomSizer2 : MonoBehaviour
 {
 
+	private BoxCollider roomBox;
 	private SkinnedMeshRenderer sMR;
 	public Rigidbody rb;
 	public int stepBounds = 4;
@@ -30,7 +31,6 @@ public class RandomRoomSizer2 : MonoBehaviour
 	private SkinnedMeshRenderer EDBlend;
 	private SkinnedMeshRenderer SDBlend;
 	private SkinnedMeshRenderer WDBlend;
-
 	
 	void Awake()
 	{
@@ -55,6 +55,8 @@ public class RandomRoomSizer2 : MonoBehaviour
         GameObject eastWalker = EastWalker;
         GameObject southWalker = SouthWalker;
         GameObject westWalker = WestWalker;
+
+		roomBox = GetComponent<BoxCollider>();
 
 		// rb = GetComponent<Rigidbody>();
 		
@@ -82,7 +84,9 @@ public class RandomRoomSizer2 : MonoBehaviour
 		
 		northWalker.transform.position += (Vector3.forward * roomWidth) * 10;
 		eastWalker.transform.position += (Vector3.right * roomLength) * 10;
-		
+
+		roomBox.size = new Vector3(14+(roomLength*10), 18, 14+(roomWidth*10));
+		roomBox.center = new Vector3(7-(roomLength/2),9,-7-(roomWidth/2));
 	}
 	
 	// Update is called once per frame
