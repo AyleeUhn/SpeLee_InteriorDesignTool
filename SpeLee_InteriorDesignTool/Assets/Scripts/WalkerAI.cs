@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WalkerAI : MonoBehaviour {
-
-    public GameObject self;
+public class WalkerAI : MonoBehaviour
+{
+	public GameObject self;
 
 	public GameObject room;
 
@@ -15,8 +15,7 @@ public class WalkerAI : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
-
-		roomBox = gameObject.GetComponent<Collider>();
+		//roomBox = gameObject.GetComponent<Collider>();
 		
 		if (self.name == "WalkerAI_No")
 		{
@@ -43,18 +42,29 @@ public class WalkerAI : MonoBehaviour {
 		transform.position += direction;
 	}
 
-	void OnCollisionEnter(Collision collision)
+	void OnTriggerEnter(Collider evnt)
 	{
-		Debug.Log(collision);
-		/*if (collision == GetComponent<Collider>())
-		{
-			
-		}*/
+		Debug.Log(evnt);
+	}
+
+	void OnTriggerExit(Collider room)
+	{
+		//Debug.Log(self);
+		//Debug.Log(BuildingController.rooms);
+		KillSelf();
 	}
 
 	void KillSelf()
 	{
-		GameObject roomClone = (GameObject) Instantiate(room, transform.position, transform.rotation);
+		// Previous Room Attach Script()
+		// Room Type Assign Script()
+		// Room Fit Script()
+		if (BuildingController.rooms >= 0)
+		{
+			//GameObject roomClone = (GameObject) 
+			Instantiate(room, /*transform.position*/ new Vector3(0,0,0), transform.rotation);
+			BuildingController.rooms--;
+		}
 		Destroy(self);
 	}
 }

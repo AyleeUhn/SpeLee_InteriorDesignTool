@@ -15,7 +15,7 @@ public class RandomRoomSizer2 : MonoBehaviour
 	public int upperBounds = 40;
 
 	//private int roomWidth;
-	//private int roomLength;
+	//private int roomLength; 
 
 	public GameObject NorthDoor;
 	public GameObject EastDoor;
@@ -86,7 +86,7 @@ public class RandomRoomSizer2 : MonoBehaviour
 		eastWalker.transform.position += (Vector3.right * roomLength) * 10;
 
 		roomBox.size = new Vector3(14+(roomLength*10), 18, 14+(roomWidth*10));
-		roomBox.center = new Vector3(7-(roomLength/2),9,-7-(roomWidth/2));
+		roomBox.center = new Vector3(-1*(roomLength*5)-7,9,-1*(roomWidth*5)+7);
 	}
 	
 	// Update is called once per frame
