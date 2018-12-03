@@ -12,26 +12,45 @@ public class WalkerAI : MonoBehaviour
 
 	private Collider roomBox;
 
+	private int roomLength;
+	private int roomWidth;
+
+	private int xMod = 0;
+	private int zMod = 0;
+
+	private RandomRoomSizer2 roomProp;
+	
+	private Vector3 staticRot = new Vector3(0,180,0);
+
 	// Use this for initialization
 	void Start ()
 	{
 		//roomBox = gameObject.GetComponent<Collider>();
+		roomProp = room.GetComponent<RandomRoomSizer2>();
 		
 		if (self.name == "WalkerAI_No")
 		{
 			direction = new Vector3(0, 0, 0.1f);
+			xMod = 0;
+			zMod = 0;
 		}
 		if (self.name == "WalkerAI_So")
 		{
 			direction = new Vector3(0, 0, -0.1f);
+			xMod = 0;
+			zMod = 0;
 		}
 		if (self.name == "WalkerAI_We")
 		{
 			direction = new Vector3(-0.1f, 0, 0);
+			xMod = -7;
+			zMod = -100;
 		}
 		if (self.name == "WalkerAI_Ea")
 		{
 			direction = new Vector3(0.1f, 0, 0);
+			xMod = 0;
+			zMod = 0;
 		}
 	}
 	
@@ -44,7 +63,7 @@ public class WalkerAI : MonoBehaviour
 
 	void OnTriggerEnter(Collider evnt)
 	{
-		Debug.Log(evnt);
+		//Debug.Log(evnt);
 	}
 
 	void OnTriggerExit(Collider room)
@@ -62,7 +81,7 @@ public class WalkerAI : MonoBehaviour
 		if (BuildingController.rooms >= 0)
 		{
 			//GameObject roomClone = (GameObject) 
-			Instantiate(room, /*transform.position*/ new Vector3(0,0,0), transform.rotation);
+			Instantiate(room, /*transform.position*/ new Vector3(xMod,0,zMod), Quaternion.Euler(staticRot));
 			BuildingController.rooms--;
 		}
 		Destroy(self);

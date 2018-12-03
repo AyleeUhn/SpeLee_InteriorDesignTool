@@ -14,8 +14,8 @@ public class RandomRoomSizer2 : MonoBehaviour
 	public int lowerBounds = 16;
 	public int upperBounds = 40;
 
-	//private int roomWidth;
-	//private int roomLength; 
+	public int roomWidth;
+	public int roomLength; 
 
 	public GameObject NorthDoor;
 	public GameObject EastDoor;
@@ -60,13 +60,13 @@ public class RandomRoomSizer2 : MonoBehaviour
 
 		// rb = GetComponent<Rigidbody>();
 		
-		int roomWidth = Random.Range(lowerBounds, upperBounds);
+		roomWidth = Random.Range(lowerBounds, upperBounds);
 		if (lowerBounds < (roomWidth/2))
 		{
 			lowerBounds = (roomWidth/2);
 		}
 
-		int roomLength = Random.Range(lowerBounds, upperBounds);
+		roomLength = Random.Range(lowerBounds, upperBounds);
 		if (roomWidth * 2 > roomLength)
 		{
 			
