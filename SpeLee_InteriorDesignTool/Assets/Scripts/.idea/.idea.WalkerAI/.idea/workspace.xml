@@ -14,7 +14,7 @@
       <file leaf-file-name="WalkerAI.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WalkerAI.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="120">
               <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
               <folding>
                 <marker date="1543865884456" expanded="false" signature="6:78" ph="..." />
@@ -149,11 +149,12 @@
       <workItem from="1543432679731" duration="1045000" />
       <workItem from="1543862330156" duration="1780000" />
       <workItem from="1543864149494" duration="1797000" />
+      <workItem from="1544038746847" duration="215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9408000" />
+    <option name="totallyTimeSpent" value="9623000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -176,7 +177,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="NuGet" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -199,6 +200,61 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/WalkerAI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <marker date="1543865884456" expanded="false" signature="6:78" ph="..." />
+            <marker date="1543865884456" expanded="true" signature="117:1724" ph="{...}" />
+            <marker date="1543865884456" expanded="true" signature="521:1071" ph="{...}" />
+            <marker date="1543865884456" expanded="true" signature="664:738" ph="{...}" />
+            <marker date="1543865884456" expanded="true" signature="772:847" ph="{...}" />
+            <marker date="1543865884456" expanded="true" signature="881:960" ph="{...}" />
+            <marker date="1543865884456" expanded="true" signature="994:1068" ph="{...}" />
+            <marker date="1543865884456" expanded="true" signature="1125:1192" ph="{...}" />
+            <marker date="1543865884456" expanded="true" signature="1229:1256" ph="{...}" />
+            <marker date="1543865884456" expanded="true" signature="1292:1374" ph="{...}" />
+            <marker date="1543865884456" expanded="true" signature="1298:1357" ph="/* Debug.Log(self); ... */" />
+            <marker date="1543865884456" expanded="true" signature="1392:1722" ph="{...}" />
+            <marker date="1543865884456" expanded="true" signature="1398:1484" ph="/* Previous Room Attach Script() ... */" />
+            <marker date="1543865884456" expanded="true" signature="1521:1702" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BuildingController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <marker date="1543432323925" expanded="false" signature="6:78" ph="..." />
+            <marker date="1543432323925" expanded="true" signature="127:281" ph="{...}" />
+            <marker date="1543432323925" expanded="true" signature="210:217" ph="{...}" />
+            <marker date="1543432323925" expanded="true" signature="272:279" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandomRoomSizer2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <marker date="1543863010114" expanded="false" signature="6:78" ph="..." />
+            <marker date="1543863010114" expanded="true" signature="125:2689" ph="{...}" />
+            <marker date="1543863010114" expanded="true" signature="797:1089" ph="{...}" />
+            <marker date="1543863010114" expanded="true" signature="1138:2480" ph="{...}" />
+            <marker date="1543863010114" expanded="true" signature="1630:1670" ph="{...}" />
+            <marker date="1543863010114" expanded="true" signature="1760:1772" ph="{...}" />
+            <marker date="1543863010114" expanded="true" signature="1830:1910" ph="/* transform.localScale = new Vector3( roomWidth , 1 , roomLength ); ... */" />
+            <marker date="1543863010114" expanded="true" signature="2534:2544" ph="{...}" />
+            <marker date="1543863010114" expanded="true" signature="2565:2687" ph="{...}" />
+            <marker date="1543863010114" expanded="true" signature="2571:2681" ph="/* if (rb.drag != 0) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WalkerAI.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1185">
@@ -506,7 +562,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WalkerAI.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="120">
           <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
           <folding>
             <marker date="1543865884456" expanded="false" signature="6:78" ph="..." />
