@@ -15,8 +15,8 @@ public class WalkerAI : MonoBehaviour
 	private int roomLength;
 	private int roomWidth;
 
-	private int xMod = 0;
-	private int zMod = 0;
+	private float xMod = 0;
+	private float zMod = 0;
 
 	private RandomRoomSizer2 roomProp;
 	
@@ -43,14 +43,15 @@ public class WalkerAI : MonoBehaviour
 		if (self.name == "WalkerAI_We")
 		{
 			direction = new Vector3(-0.1f, 0, 0);
-			xMod = -7;
-			zMod = -100;
+			xMod = -7 + (-10 * roomWidth);
+			zMod = transform.root.position.z; /*-10 * roomLength*/;
+			Debug.Log(roomLength + " " + roomWidth);
 		}
 		if (self.name == "WalkerAI_Ea")
 		{
 			direction = new Vector3(0.1f, 0, 0);
-			xMod = 0;
-			zMod = 0;
+			xMod = -7 + (transform.root.position.x * 100);
+			zMod = transform.root.position.z;
 		}
 	}
 	
@@ -80,8 +81,8 @@ public class WalkerAI : MonoBehaviour
 		// Room Fit Script()
 		if (BuildingController.rooms >= 0)
 		{
-			//GameObject roomClone = (GameObject) 
-			Instantiate(room, /*transform.position*/ new Vector3(xMod,0,zMod), Quaternion.Euler(staticRot));
+			GameObject roomClone = (GameObject)Instantiate(room, /*transform.position*/ new Vector3(xMod,0,zMod), Quaternion.Euler(staticRot));
+			roomClone.name = ( self.name + BuildingController.rooms);
 			BuildingController.rooms--;
 		}
 		Destroy(self);

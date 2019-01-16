@@ -85,8 +85,8 @@ public class RandomRoomSizer2 : MonoBehaviour
 		northWalker.transform.position += (Vector3.forward * roomWidth) * 10;
 		eastWalker.transform.position += (Vector3.right * roomLength) * 10;
 
-		roomBox.size = new Vector3(14+(roomLength*10), 18, 14+(roomWidth*10));
-		roomBox.center = new Vector3(-1*(roomLength*5)-7,9,-1*(roomWidth*5)+7);
+		roomBox.size = new Vector3(0.14f+(roomLength*0.1f), 0.18f, 0.14f+(roomWidth*0.1f));
+		roomBox.center = new Vector3(-1*(roomLength*0.05f)-0.07f,0.09f,-1*(roomWidth*0.05f)+0.07f);
 	}
 	
 	// Update is called once per frame

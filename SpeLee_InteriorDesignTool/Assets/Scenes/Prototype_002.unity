@@ -150,7 +150,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 99435360}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &99435363
 Behaviour:
   m_ObjectHideFlags: 0
@@ -233,6 +233,30 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114748490873893466, guid: fec09d26bcebd9940bf3011480509aaf,
+        type: 2}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 1767784094762516, guid: fec09d26bcebd9940bf3011480509aaf,
+        type: 2}
+    - target: {fileID: 114904937209273338, guid: fec09d26bcebd9940bf3011480509aaf,
+        type: 2}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 1767784094762516, guid: fec09d26bcebd9940bf3011480509aaf,
+        type: 2}
+    - target: {fileID: 114158742574743582, guid: fec09d26bcebd9940bf3011480509aaf,
+        type: 2}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 1767784094762516, guid: fec09d26bcebd9940bf3011480509aaf,
+        type: 2}
+    - target: {fileID: 114342570698337536, guid: fec09d26bcebd9940bf3011480509aaf,
+        type: 2}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 1767784094762516, guid: fec09d26bcebd9940bf3011480509aaf,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fec09d26bcebd9940bf3011480509aaf, type: 2}
   m_IsPrefabParent: 0
@@ -440,7 +464,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1607725423}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1607725425
 Behaviour:
   m_ObjectHideFlags: 0
