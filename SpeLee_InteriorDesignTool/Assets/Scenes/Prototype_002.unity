@@ -257,6 +257,27 @@ Prefab:
       value: 
       objectReference: {fileID: 1767784094762516, guid: fec09d26bcebd9940bf3011480509aaf,
         type: 2}
+    - target: {fileID: 1625699949700712, guid: fec09d26bcebd9940bf3011480509aaf, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431091525188184, guid: fec09d26bcebd9940bf3011480509aaf, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289362372797002, guid: fec09d26bcebd9940bf3011480509aaf, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1093027625700188, guid: fec09d26bcebd9940bf3011480509aaf, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 137291647730617226, guid: fec09d26bcebd9940bf3011480509aaf,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 24d64f340f53f804788e06341d4fb83e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fec09d26bcebd9940bf3011480509aaf, type: 2}
   m_IsPrefabParent: 0
