@@ -81,7 +81,7 @@ public class WalkerAI : MonoBehaviour
 		// Room Fit Script()
 		if (BuildingController.rooms >= 0)
 		{
-			GameObject roomClone = (GameObject)Instantiate(room, /*transform.position*/ new Vector3(xMod,0,zMod), Quaternion.Euler(staticRot));
+			GameObject roomClone = (GameObject)Instantiate(room, new Vector3(xMod,0,zMod), Quaternion.Euler(staticRot), this.transform.parent.transform.parent.transform.parent);
 			roomClone.name = ( self.name + BuildingController.rooms);
 			BuildingController.rooms--;
 		}

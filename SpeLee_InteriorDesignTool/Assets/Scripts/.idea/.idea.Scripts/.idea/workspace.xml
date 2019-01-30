@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a45e655-ccf1-40e2-b4ba-0b94fe463d8a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/RandomRoomSizer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandomRoomSizer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandomRoomSizer2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RandomRoomSizer2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RoomGravityCollector.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RoomGravityCollector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/SocServ_Room.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/SocServ_Room.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/Prototype_002.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Prototype_002.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WalkerAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WalkerAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Webnotes/Parent's Parent and Child's Child Question - Unity Answers.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Webnotes/SpencerLee-PTI_181212.pdf.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Webnotes/Unity - Scripting API- Transform.parenthttps---docs.unity3d.com-ScriptReference-Transform-parent.html.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Webnotes/Unity - Scripting API- Vector3.forward.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Webnotes/how do I access the topmost parent of an object with multiple parents - Unity Answers.url" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,20 +21,30 @@
     <session id="1293826491">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="284" />
+          <entry key="cs" value="350" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="284" />
+          <entry key="C#" value="350" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -42,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RandomRoomSizer2.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="753">
-              <caret line="87" column="40" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
+            <state relative-caret-position="961">
+              <caret line="76" column="47" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -51,8 +63,44 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WalkerAI.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
+            <state relative-caret-position="689">
+              <caret line="83" column="175" selection-start-line="83" selection-start-column="175" selection-end-line="83" selection-end-column="175" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RoomResizer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RoomMover.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DoorMover.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DoorResizer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -64,13 +112,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/DoorResizer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WalkerAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RoomResizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RoomMover.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RandomRoomSizer2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DoorMover.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/RandomRoomSizer2.cs" />
+        <option value="$PROJECT_DIR$/RoomResizer.cs" />
+        <option value="$PROJECT_DIR$/RoomMover.cs" />
+        <option value="$PROJECT_DIR$/DoorResizer.cs" />
+        <option value="$PROJECT_DIR$/DoorMover.cs" />
         <option value="$PROJECT_DIR$/WalkerAI.cs" />
       </list>
     </option>
@@ -126,11 +182,12 @@
       <updated>1547500978824</updated>
       <workItem from="1547500982040" duration="569000" />
       <workItem from="1547667608091" duration="5069000" />
+      <workItem from="1548878427382" duration="2488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5638000" />
+    <option name="totallyTimeSpent" value="8126000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -144,7 +201,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3336887" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -188,17 +245,45 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DoorMover.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DoorResizer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RoomMover.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RoomResizer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RandomRoomSizer2.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="87" column="40" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
+        <state relative-caret-position="961">
+          <caret line="76" column="47" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WalkerAI.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
+        <state relative-caret-position="689">
+          <caret line="83" column="175" selection-start-line="83" selection-start-column="175" selection-end-line="83" selection-end-column="175" />
         </state>
       </provider>
     </entry>
