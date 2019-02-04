@@ -15,6 +15,9 @@ public class WalkerAI : MonoBehaviour
 	private int roomLength;
 	private int roomWidth;
 
+	private int trueLength = 9;
+	private int trueWidth = 9;
+
 	private float xMod = 0;
 	private float zMod = 0;
 
@@ -22,26 +25,41 @@ public class WalkerAI : MonoBehaviour
 	
 	private Vector3 staticRot = new Vector3(0,180,0);
 
+	public enum createDir
+	{
+        North,
+        East,
+        South,
+        West
+	};
+
 	// Use this for initialization
 	void Start ()
 	{
+		createDir dir;
+		dir = createDir.North;
 		//roomBox = gameObject.GetComponent<Collider>();
 		roomProp = room.GetComponent<RandomRoomSizer2>();
+		roomLength = roomProp.roomLength;
+		roomWidth = roomProp.roomWidth;
 		
 		if (self.name == "WalkerAI_No")
 		{
+			dir = createDir.North;
 			direction = new Vector3(0, 0, 0.1f);
 			xMod = 0;
 			zMod = 0;
 		}
 		if (self.name == "WalkerAI_So")
 		{
+			dir = createDir.South;
 			direction = new Vector3(0, 0, -0.1f);
 			xMod = 0;
 			zMod = 0;
 		}
 		if (self.name == "WalkerAI_We")
 		{
+			dir = createDir.West;
 			direction = new Vector3(-0.1f, 0, 0);
 			xMod = -7 + (-10 * roomWidth);
 			zMod = transform.root.position.z; /*-10 * roomLength*/;
@@ -49,8 +67,9 @@ public class WalkerAI : MonoBehaviour
 		}
 		if (self.name == "WalkerAI_Ea")
 		{
+			dir = createDir.East;
 			direction = new Vector3(0.1f, 0, 0);
-			xMod = -7 + (transform.root.position.x * 100);
+			xMod = -7 + (transform.root.position.x * 10);
 			zMod = transform.root.position.z;
 		}
 	}
@@ -79,6 +98,24 @@ public class WalkerAI : MonoBehaviour
 		// Previous Room Attach Script()
 		// Room Type Assign Script()
 		// Room Fit Script()
+		/*switch (dir)
+		{
+			case createDir.North :
+
+			break;
+			case createDir.West :
+
+			break;
+			case createDir.South :
+
+			break;
+			case createDir.East :
+
+			break;
+			default :
+
+			break;
+		}*/
 		if (BuildingController.rooms >= 0)
 		{
 			GameObject roomClone = (GameObject)Instantiate(room, new Vector3(xMod,0,zMod), Quaternion.Euler(staticRot), this.transform.parent.transform.parent.transform.parent);

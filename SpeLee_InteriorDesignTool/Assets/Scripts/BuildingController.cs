@@ -8,12 +8,20 @@ public class BuildingController : MonoBehaviour
 	static public int rooms = 8;
 	
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
+		// ID Walker object
+		
+	}
+
+	void DestroyWalker()
+	{
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		
 	}
 }
