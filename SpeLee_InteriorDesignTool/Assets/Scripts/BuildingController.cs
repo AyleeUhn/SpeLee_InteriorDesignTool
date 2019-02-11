@@ -5,12 +5,26 @@ using UnityEngine;
 public class BuildingController : MonoBehaviour
 {
 
-	static public int rooms = 8;
+	static public int rooms = 0;
+
+	static public bool[,] gridManage;
+
+	// roomList will store room index, x position, z position, width, length
+	// Maybe try using Lists
+
+	public int[,] roomList;
 	
+	public GameObject Lot;
+
 	// Use this for initialization
 	void Start () 
 	{
 		// ID Walker object
+		
+	}
+
+	void initializeGrid ()
+	{
 		
 	}
 

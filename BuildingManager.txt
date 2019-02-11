@@ -1,0 +1,11 @@
+Lot Defaults (Can Change)
+280 Units Wide
+220 Units Long
+
+Room Defaults (No Changes)
+14 by 14 units
+
+PR.postion.x  - (14 + socServ.blendWidth) <= BLP.scale.x
+
+PR.postion.z  - (14 + socServ.blendLength) <= BLP.scale.z
+
