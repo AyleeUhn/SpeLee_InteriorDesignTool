@@ -80,7 +80,6 @@ public class RandomRoomSizer2 : MonoBehaviour
 		EDBlend.SetBlendShapeWeight(9, roomLength * 10);
 
 		//  Average Door Frames to center walker position for accurate walking behavior
-
 		
 		northWalker.transform.position += (Vector3.forward * roomWidth) * 10;
 		eastWalker.transform.position += (Vector3.right * roomLength) * 10;
@@ -92,7 +91,6 @@ public class RandomRoomSizer2 : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-
 		
 	}
 

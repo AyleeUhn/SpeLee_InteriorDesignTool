@@ -178,7 +178,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 107.35
+  orthographic size: 112.41
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -331,6 +331,27 @@ Prefab:
         type: 2}
       propertyPath: m_BlendShapeWeights.Array.data[8]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1093027625700188, guid: fec09d26bcebd9940bf3011480509aaf, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625699949700712, guid: fec09d26bcebd9940bf3011480509aaf, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289362372797002, guid: fec09d26bcebd9940bf3011480509aaf, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431091525188184, guid: fec09d26bcebd9940bf3011480509aaf, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 137291647730617226, guid: fec09d26bcebd9940bf3011480509aaf,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114462231883054600, guid: fec09d26bcebd9940bf3011480509aaf, type: 2}

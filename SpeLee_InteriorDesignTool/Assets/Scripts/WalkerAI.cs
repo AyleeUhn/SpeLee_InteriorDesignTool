@@ -83,17 +83,17 @@ public class WalkerAI : MonoBehaviour
 
 	void OnTriggerEnter(Collider evnt)
 	{
-		//Debug.Log(evnt);
+		Debug.Log(evnt);
 	}
 
 	void OnTriggerExit(Collider room)
 	{
 		//Debug.Log(self);
 		//Debug.Log(BuildingController.rooms);
-		KillSelf();
+		GenerateRoom();
 	}
 
-	void KillSelf()
+	void GenerateRoom()
 	{
 		// Previous Room Attach Script()
 		// Room Type Assign Script()
@@ -121,6 +121,7 @@ public class WalkerAI : MonoBehaviour
 			GameObject roomClone = (GameObject)Instantiate(room, new Vector3(xMod,0,zMod), Quaternion.Euler(staticRot), this.transform.parent.transform.parent.transform.parent);
 			roomClone.name = ( self.name + BuildingController.rooms);
 			BuildingController.rooms--;
+			BuildingController.AddRoom(roomClone);
 		}
 		Destroy(self);
 	}

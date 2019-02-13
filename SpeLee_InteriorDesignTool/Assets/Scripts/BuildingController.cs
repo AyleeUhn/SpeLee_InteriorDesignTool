@@ -7,18 +7,19 @@ public class BuildingController : MonoBehaviour
 
 	static public int rooms = 0;
 
-	static public bool[,] gridManage;
+	// static public GameObject[] roomManage;
 
 	// roomList will store room index, x position, z position, width, length
 	// Maybe try using Lists
 
-	public int[,] roomList;
+	static private List<GameObject> roomList;
 	
 	public GameObject Lot;
 
 	// Use this for initialization
 	void Start () 
 	{
+		List<GameObject> roomList = new List<GameObject>();
 		// ID Walker object
 		
 	}
@@ -32,10 +33,20 @@ public class BuildingController : MonoBehaviour
 	{
 		
 	}
+
+	public static void AddRoom(GameObject room)
+	{
+		roomList.Add(room);
+	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
 		
+	}
+
+	void OnDestroy()
+	{
+		// roomList.Clear();
 	}
 }
