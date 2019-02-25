@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RoomGenerate : MonoBehaviour {
 
-	/*
 	private BoxCollider roomBox;
 	private SkinnedMeshRenderer sMR;
 	public Rigidbody rb;
@@ -87,6 +86,5 @@ public class RoomGenerate : MonoBehaviour {
 		roomBox.size = new Vector3(0.14f+(roomLength*0.1f), 0.18f, 0.14f+(roomWidth*0.1f));
 		roomBox.center = new Vector3(-1*(roomLength*0.05f)-0.07f,0.09f,-1*(roomWidth*0.05f)+0.07f);
 	}
-	 */
 	
 }

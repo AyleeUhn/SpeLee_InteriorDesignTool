@@ -21,7 +21,7 @@ public class WalkerAI : MonoBehaviour
 	private float xMod = 0;
 	private float zMod = 0;
 
-	private RandomRoomSizer2 roomProp;
+	private RoomGenerate roomProp;
 	
 	private Vector3 staticRot = new Vector3(0,180,0);
 
@@ -39,7 +39,7 @@ public class WalkerAI : MonoBehaviour
 		createDir dir;
 		dir = createDir.North;
 		//roomBox = gameObject.GetComponent<Collider>();
-		roomProp = room.GetComponent<RandomRoomSizer2>();
+		roomProp = room.GetComponent<RoomGenerate>();
 		roomLength = roomProp.roomLength;
 		roomWidth = roomProp.roomWidth;
 		
