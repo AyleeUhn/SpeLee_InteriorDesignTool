@@ -13,8 +13,8 @@ public class RoomGenerate : MonoBehaviour {
 	public int lowerBounds = 16;
 	public int upperBounds = 40;
 
-	public int roomWidth;
-	public int roomLength; 
+    public int roomLength;
+	public int roomWidth; 
 
 	public GameObject NorthDoor;
 	public GameObject EastDoor;
@@ -60,31 +60,31 @@ public class RoomGenerate : MonoBehaviour {
 		// rb = GetComponent<Rigidbody>();
 		
 		roomWidth = Random.Range(lowerBounds, upperBounds);
-		if (lowerBounds < (roomWidth/2))
-		{
-			lowerBounds = (roomWidth/2);
-		}
+		//if (lowerBounds < (roomWidth/2))
+		//{
+		//	lowerBounds = (roomWidth/2);
+		//}
 
-		roomLength = Random.Range(lowerBounds, upperBounds);
-		if (roomWidth * 2 > roomLength)
-		{
+		//roomLength = Random.Range(lowerBounds, upperBounds);
+		//if (roomWidth * 2 > roomLength)
+		//{
 			
-		}
+		//}
 		roomLength = Random.Range(lowerBounds, upperBounds);
 		// transform.localScale = new Vector3( roomWidth , 1 , roomLength );
 		//10 & 11
-		sMR.SetBlendShapeWeight(8, roomWidth*10);
-		NDBlend.SetBlendShapeWeight(8, roomWidth * 10);
-		sMR.SetBlendShapeWeight(9, roomLength*10);
-		EDBlend.SetBlendShapeWeight(9, roomLength * 10);
+		sMR.SetBlendShapeWeight(8, roomLength * 10);
+		NDBlend.SetBlendShapeWeight(8, roomLength * 10);
+		sMR.SetBlendShapeWeight(9, roomWidth * 10);
+		EDBlend.SetBlendShapeWeight(9, roomWidth * 10);
 
 		//  Average Door Frames to center walker position for accurate walking behavior
 		
-		northWalker.transform.position += (Vector3.forward * roomWidth) * 10;
-		eastWalker.transform.position += (Vector3.right * roomLength) * 10;
+		northWalker.transform.position += (Vector3.forward * roomLength) * 10;
+		eastWalker.transform.position += (Vector3.right * roomWidth) * 10;
 
-		roomBox.size = new Vector3(0.14f+(roomLength*0.1f), 0.18f, 0.14f+(roomWidth*0.1f));
-		roomBox.center = new Vector3(-1*(roomLength*0.05f)-0.07f,0.09f,-1*(roomWidth*0.05f)+0.07f);
+		roomBox.size = new Vector3(0.14f+(roomWidth * 0.1f), 0.18f, 0.14f+(roomLength * 0.1f));
+		roomBox.center = new Vector3(-1*(roomWidth * 0.05f)-0.07f,0.09f,-1*(roomLength * 0.05f)+0.07f);
 	}
 	
 }

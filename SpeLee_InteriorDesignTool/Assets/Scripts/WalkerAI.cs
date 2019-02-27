@@ -10,13 +10,13 @@ public class WalkerAI : MonoBehaviour
 
 	private Vector3 direction; // East (-1,0,0) South (0,0,1) West (1,0,0) North (0,0,-1)
 
-	private Collider roomBox;
+	//private Collider roomBox;
 
 	private int roomLength;
 	private int roomWidth;
 
-	private int trueLength = 9;
-	private int trueWidth = 9;
+	//private int trueLength = 9;
+	//private int trueWidth = 9;
 
 	private float xMod = 0;
 	private float zMod = 0;
@@ -25,7 +25,7 @@ public class WalkerAI : MonoBehaviour
 	
 	private Vector3 staticRot = new Vector3(0,180,0);
 
-	public enum createDir
+	public enum CreateDir
 	{
         North,
         East,
@@ -36,8 +36,8 @@ public class WalkerAI : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		createDir dir;
-		dir = createDir.North;
+		CreateDir dir;
+		dir = CreateDir.North;
 		//roomBox = gameObject.GetComponent<Collider>();
 		roomProp = room.GetComponent<RoomGenerate>();
 		roomLength = roomProp.roomLength;
@@ -45,29 +45,28 @@ public class WalkerAI : MonoBehaviour
 		
 		if (self.name == "WalkerAI_No")
 		{
-			dir = createDir.North;
+			dir = CreateDir.North;
 			direction = new Vector3(0, 0, 0.1f);
 			xMod = 0;
 			zMod = 0;
 		}
 		if (self.name == "WalkerAI_So")
 		{
-			dir = createDir.South;
+			dir = CreateDir.South;
 			direction = new Vector3(0, 0, -0.1f);
 			xMod = 0;
 			zMod = 0;
 		}
 		if (self.name == "WalkerAI_We")
 		{
-			dir = createDir.West;
+			dir = CreateDir.West;
 			direction = new Vector3(-0.1f, 0, 0);
-			xMod = -7 + (-10 * roomWidth);
-			zMod = transform.root.position.z; /*-10 * roomLength*/;
-			Debug.Log(roomLength + " " + roomWidth);
+			xMod = (-10 * roomWidth);
+			zMod = transform.root.position.z;
 		}
 		if (self.name == "WalkerAI_Ea")
 		{
-			dir = createDir.East;
+			dir = CreateDir.East;
 			direction = new Vector3(0.1f, 0, 0);
 			xMod = -7 + (transform.root.position.x * 10);
 			zMod = transform.root.position.z;

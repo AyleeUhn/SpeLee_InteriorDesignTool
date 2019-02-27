@@ -5,7 +5,7 @@ Lot Defaults (Can Change)
 Room Defaults (No Changes)
 14 by 14 units
 
-PR.postion.x  - (14 + socServ.blendWidth) <= BLP.scale.x
+PR.postion.x  - (14 + Room_v4.blendWidth) <= BLP.scale.x
 
-PR.postion.z  - (14 + socServ.blendLength) <= BLP.scale.z
+PR.postion.z  - (14 + Room_v4.blendLength) <= BLP.scale.z
 
