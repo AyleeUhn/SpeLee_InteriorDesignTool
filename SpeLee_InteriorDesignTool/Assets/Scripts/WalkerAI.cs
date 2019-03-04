@@ -24,8 +24,9 @@ public class WalkerAI : MonoBehaviour
 	private RoomGenerate roomProp;
 	
 	private Vector3 staticRot = new Vector3(0,180,0);
+    public bool roomInRoom = false;
 
-	public enum CreateDir
+    public enum CreateDir
 	{
         North,
         East,
@@ -119,7 +120,12 @@ public class WalkerAI : MonoBehaviour
 		{
 			GameObject roomClone = (GameObject)Instantiate(room, new Vector3(xMod,0,zMod), Quaternion.Euler(staticRot), this.transform.parent.transform.parent.transform.parent);
 			roomClone.name = ( self.name + BuildingController.rooms);
-			BuildingController.rooms--;
+            if (roomInRoom)
+            {
+                roomClone.GetComponent<RoomGenerate>().roomLength = roomProp.GetComponent<RoomGenerate>().roomLength;
+                roomClone.GetComponent<RoomGenerate>().roomWidth = roomProp.GetComponent<RoomGenerate>().roomWidth;
+            }
+            BuildingController.rooms--;
 			BuildingController.AddRoom(roomClone);
 		}
 		Destroy(self);

@@ -56,24 +56,18 @@ public class RoomGenerate : MonoBehaviour {
         GameObject westWalker = WestWalker;
 
 		roomBox = GetComponent<BoxCollider>();
-
-		// rb = GetComponent<Rigidbody>();
-		
-		roomWidth = Random.Range(lowerBounds, upperBounds);
-		//if (lowerBounds < (roomWidth/2))
-		//{
-		//	lowerBounds = (roomWidth/2);
-		//}
-
-		//roomLength = Random.Range(lowerBounds, upperBounds);
-		//if (roomWidth * 2 > roomLength)
-		//{
-			
-		//}
-		roomLength = Random.Range(lowerBounds, upperBounds);
-		// transform.localScale = new Vector3( roomWidth , 1 , roomLength );
-		//10 & 11
-		sMR.SetBlendShapeWeight(8, roomLength * 10);
+        
+        if (roomWidth + roomLength == 0)
+        { 
+		    roomWidth = Random.Range(lowerBounds, upperBounds);
+		    roomLength = Random.Range(lowerBounds, upperBounds);
+        }
+        else
+        {
+            roomWidth = Random.Range(lowerBounds, roomWidth);
+            roomLength = Random.Range(lowerBounds, roomLength);
+        }
+        sMR.SetBlendShapeWeight(8, roomLength * 10);
 		NDBlend.SetBlendShapeWeight(8, roomLength * 10);
 		sMR.SetBlendShapeWeight(9, roomWidth * 10);
 		EDBlend.SetBlendShapeWeight(9, roomWidth * 10);
