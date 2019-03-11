@@ -5,7 +5,8 @@ using UnityEngine;
 public class BuildingController : MonoBehaviour
 {
 
-	static public int rooms = 0;
+	static public int rooms = 4;
+    static public int printReady = 1;
 
 	// static public GameObject[] roomManage;
 
@@ -21,10 +22,9 @@ public class BuildingController : MonoBehaviour
 	{
 		List<GameObject> roomList = new List<GameObject>();
 		// ID Walker object
-		
 	}
 
-	void initializeGrid ()
+	void InitializeGrid ()
 	{
 		
 	}
@@ -42,11 +42,15 @@ public class BuildingController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		
+		if (rooms < 0 && printReady == 1)
+        {
+            //Debug.Log(roomList);
+            printReady = 0;
+        }
 	}
 
 	void OnDestroy()
 	{
-		// roomList.Clear();
+		roomList.Clear();
 	}
 }

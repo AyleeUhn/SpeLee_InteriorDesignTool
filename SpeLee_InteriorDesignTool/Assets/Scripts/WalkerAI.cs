@@ -37,6 +37,7 @@ public class WalkerAI : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+        //BuildingController.AddRoom(room);
 		CreateDir dir;
 		dir = CreateDir.North;
 		//roomBox = gameObject.GetComponent<Collider>();
@@ -83,18 +84,60 @@ public class WalkerAI : MonoBehaviour
 
 	void OnTriggerEnter(Collider evnt)
 	{
-		Debug.Log(evnt);
+		//Debug.Log(evnt);
 	}
 
 	void OnTriggerExit(Collider room)
 	{
 		//Debug.Log(self);
 		//Debug.Log(BuildingController.rooms);
-		GenerateRoom();
+		DetermineNextRoom();
 	}
 
-	void GenerateRoom()
+    int FindDirection()
+    {
+        CreateDir dir;
+        dir = CreateDir.North;
+        //roomBox = gameObject.GetComponent<Collider>();
+        roomProp = room.GetComponent<RoomGenerate>();
+        roomLength = roomProp.roomLength;
+        roomWidth = roomProp.roomWidth;
+
+        if (self.name == "WalkerAI_No")
+        {
+            dir = CreateDir.North;
+            direction = new Vector3(0, 0, 0.1f);
+            xMod = 0;
+            zMod = 0;
+        }
+        if (self.name == "WalkerAI_So")
+        {
+            dir = CreateDir.South;
+            direction = new Vector3(0, 0, -0.1f);
+            xMod = 0;
+            zMod = 0;
+        }
+        if (self.name == "WalkerAI_We")
+        {
+            dir = CreateDir.West;
+            direction = new Vector3(-0.1f, 0, 0);
+            xMod = (-10 * roomWidth);
+            zMod = transform.root.position.z;
+        }
+        if (self.name == "WalkerAI_Ea")
+        {
+            dir = CreateDir.East;
+            direction = new Vector3(0.1f, 0, 0);
+            xMod = -7 + (transform.root.position.x * 10);
+            zMod = transform.root.position.z;
+        }
+        int num = 0;
+        return num;
+    }
+
+	void DetermineNextRoom()
 	{
+        GenerateRoom(0, 0, 0);
 		// Previous Room Attach Script()
 		// Room Type Assign Script()
 		// Room Fit Script()
@@ -116,6 +159,7 @@ public class WalkerAI : MonoBehaviour
 
 			break;
 		}*/
+
 		if (BuildingController.rooms >= 0)
 		{
 			GameObject roomClone = (GameObject)Instantiate(room, new Vector3(xMod,0,zMod), Quaternion.Euler(staticRot), this.transform.parent.transform.parent.transform.parent);
@@ -130,4 +174,21 @@ public class WalkerAI : MonoBehaviour
 		}
 		Destroy(self);
 	}
+
+    void GenerateRoom(int dir, int width, int length)
+    {
+        if (BuildingController.rooms >= 0)
+        {
+            GameObject roomClone = (GameObject)Instantiate(room, new Vector3(xMod, 0, zMod), Quaternion.Euler(staticRot), this.transform.parent.transform.parent.transform.parent);
+            roomClone.name = (self.name + BuildingController.rooms);
+            if (roomInRoom)
+            {
+                roomClone.GetComponent<RoomGenerate>().roomLength = roomProp.GetComponent<RoomGenerate>().roomLength;
+                roomClone.GetComponent<RoomGenerate>().roomWidth = roomProp.GetComponent<RoomGenerate>().roomWidth;
+            }
+            BuildingController.rooms--;
+            BuildingController.AddRoom(roomClone);
+        }
+        Destroy(self);
+    }
 }

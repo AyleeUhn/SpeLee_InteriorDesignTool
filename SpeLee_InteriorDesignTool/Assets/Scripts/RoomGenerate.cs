@@ -45,6 +45,7 @@ public class RoomGenerate : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
+
 		GameObject northDoor = NorthDoor;
 		GameObject eastDoor = EastDoor;
 		GameObject southDoor = SouthDoor;
@@ -58,12 +59,14 @@ public class RoomGenerate : MonoBehaviour {
 		roomBox = GetComponent<BoxCollider>();
         
         if (roomWidth + roomLength == 0)
-        { 
-		    roomWidth = Random.Range(lowerBounds, upperBounds);
+        {
+            Debug.Log("I am a room inside a room");
+            roomWidth = Random.Range(lowerBounds, upperBounds);
 		    roomLength = Random.Range(lowerBounds, upperBounds);
         }
         else
         {
+            Debug.Log("I am just a room");
             roomWidth = Random.Range(lowerBounds, roomWidth);
             roomLength = Random.Range(lowerBounds, roomLength);
         }
@@ -79,6 +82,8 @@ public class RoomGenerate : MonoBehaviour {
 
 		roomBox.size = new Vector3(0.14f+(roomWidth * 0.1f), 0.18f, 0.14f+(roomLength * 0.1f));
 		roomBox.center = new Vector3(-1*(roomWidth * 0.05f)-0.07f,0.09f,-1*(roomLength * 0.05f)+0.07f);
-	}
+
+        BuildingController.AddRoom(gameObject);
+    }
 	
 }
