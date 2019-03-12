@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45142704, g: 0.50063443, b: 0.57081205, a: 1}
+  m_IndirectSpecularColor: {r: 0.45142746, g: 0.50063497, b: 0.57081264, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1000,6 +1000,14 @@ Prefab:
       propertyPath: roomInRoom
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1395319888655184, guid: 76a8c93dd59af2547ba1ce5c6efd2108, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530827648257622, guid: 76a8c93dd59af2547ba1ce5c6efd2108, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76a8c93dd59af2547ba1ce5c6efd2108, type: 2}
   m_IsPrefabParent: 0
@@ -1718,6 +1726,7 @@ GameObject:
   - component: {fileID: 979189390}
   - component: {fileID: 979189389}
   - component: {fileID: 979189388}
+  - component: {fileID: 979189392}
   m_Layer: 0
   m_Name: BuidlingLot
   m_TagString: Untagged
@@ -1731,7 +1740,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 979189387}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 189f109413b05694f9ccab69720cc586, type: 3}
   m_Name: 
@@ -1794,6 +1803,18 @@ Transform:
   m_Father: {fileID: 1183095867}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &979189392
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 979189387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.999999, y: 9.37, z: 9.999999}
+  m_Center: {x: -0.00000047683716, y: 8.45, z: -0.00000047683716}
 --- !u!1 &1007503081
 GameObject:
   m_ObjectHideFlags: 0

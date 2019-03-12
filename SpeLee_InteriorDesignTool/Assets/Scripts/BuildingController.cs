@@ -5,7 +5,7 @@ using UnityEngine;
 public class BuildingController : MonoBehaviour
 {
 
-	static public int rooms = 4;
+	static public int rooms = 8;
     static public int printReady = 1;
 
 	// static public GameObject[] roomManage;

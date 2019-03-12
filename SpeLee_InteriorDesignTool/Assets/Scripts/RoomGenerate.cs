@@ -58,29 +58,38 @@ public class RoomGenerate : MonoBehaviour {
 
 		roomBox = GetComponent<BoxCollider>();
         
-        if (roomWidth + roomLength == 0)
-        {
-            Debug.Log("I am a room inside a room");
+      //  if (roomWidth + roomLength == 0)
+      //  {
+      //      Debug.Log(gameObject.name + " is a room inside a room");
+      //      roomWidth = Random.Range(lowerBounds, upperBounds);
+		    //roomLength = Random.Range(lowerBounds, upperBounds);
+      //  }
+      //  else
+      //  {
+            // Debug.Log(gameObject.name + " branches off of ");
             roomWidth = Random.Range(lowerBounds, upperBounds);
-		    roomLength = Random.Range(lowerBounds, upperBounds);
-        }
-        else
-        {
-            Debug.Log("I am just a room");
-            roomWidth = Random.Range(lowerBounds, roomWidth);
-            roomLength = Random.Range(lowerBounds, roomLength);
-        }
+            roomLength = Random.Range(lowerBounds, upperBounds);
+        //}
         sMR.SetBlendShapeWeight(8, roomLength * 10);
 		NDBlend.SetBlendShapeWeight(8, roomLength * 10);
 		sMR.SetBlendShapeWeight(9, roomWidth * 10);
 		EDBlend.SetBlendShapeWeight(9, roomWidth * 10);
 
-		//  Average Door Frames to center walker position for accurate walking behavior
-		
-		northWalker.transform.position += (Vector3.forward * roomLength) * 10;
-		eastWalker.transform.position += (Vector3.right * roomWidth) * 10;
+        //  Average Door Frames to center walker position for accurate walking behavior
 
-		roomBox.size = new Vector3(0.14f+(roomWidth * 0.1f), 0.18f, 0.14f+(roomLength * 0.1f));
+        //northWalker.transform.position += (Vector3.forward * roomLength) * 10;
+        //eastWalker.transform.position += (Vector3.right * roomWidth) * 10;
+
+
+        //northWalker.transform.position = Vector3.forward * ((roomLength - 3.0f) * 10) + (Vector3.right * 7) + (Vector3.up * 0.55f);
+        //eastWalker.transform.position = Vector3.right * ((roomWidth - 3.0f) * 10) + (Vector3.forward * 7) + (Vector3.up * 0.55f);
+
+        northWalker.transform.position += new Vector3(0.0f, 0.0f, (roomLength * 10) - 0.02f);
+        eastWalker.transform.position += new Vector3((roomWidth * 10) - 0.02f, 0.0f, 0.0f);
+        northWalker.transform.position += new Vector3(0.0f, 0.0f, 0.0f);
+        eastWalker.transform.position += new Vector3(0.0f, 0.0f, 0.0f);
+
+        roomBox.size = new Vector3(0.14f+(roomWidth * 0.1f), 0.18f, 0.14f+(roomLength * 0.1f));
 		roomBox.center = new Vector3(-1*(roomWidth * 0.05f)-0.07f,0.09f,-1*(roomLength * 0.05f)+0.07f);
 
         BuildingController.AddRoom(gameObject);
