@@ -8,13 +8,17 @@ public class WalkerAI : MonoBehaviour
 
 	public GameObject room;
 
+    public GameObject prefab;
+
+    private bool cancel = false;
+
 	private Vector3 direction; // East (-1,0,0) South (0,0,1) West (1,0,0) North (0,0,-1)
 
     //private Collider roomBox;
 
     private int deathTimer;
-    private int roomLength;
-	private int roomWidth;
+    private float roomLength;
+	private float roomWidth;
 
 	//private int trueLength = 9;
 	//private int trueWidth = 9;
@@ -23,7 +27,10 @@ public class WalkerAI : MonoBehaviour
 	private float zMod = 0;
     private float multiplier;
 
-    private string parentOf;
+    private bool xOffset = false;
+    private bool yOffset = false;
+
+    // private string parentOf;
     private RoomGenerate roomProp;
 	
 	private Vector3 staticRot = new Vector3(0,180,0);
@@ -52,25 +59,27 @@ public class WalkerAI : MonoBehaviour
 		{
 			dir = CreateDir.North;
 			direction = new Vector3(0, 0, 0.1f);
-			xMod = 0;
-			zMod = 0;
             multiplier = -roomLength;
+            xMod = transform.parent.position.x;
+			zMod = transform.parent.position.z;
         }
 		if (gameObject.name == "WalkerAI_So")
 		{
 			dir = CreateDir.South;
 			direction = new Vector3(0, 0, -0.1f);
-			xMod = 0;
-            zMod = 0;
+			xMod = transform.parent.position.x;
+            zMod = transform.parent.position.z;
             multiplier = roomLength;
+            yOffset = true;
         }
 		if (gameObject.name == "WalkerAI_We")
 		{
 			dir = CreateDir.West;
 			direction = new Vector3(-0.1f, 0, 0);
-            xMod = 0;
-            zMod = 0;
-            multiplier = -roomWidth;
+            xMod = transform.parent.position.x + -14;
+            zMod = transform.parent.position.z;
+            multiplier = 1;
+            xOffset = true;
             //xMod = (-10 * roomWidth);
             //zMod = transform.root.position.z;
         }
@@ -78,8 +87,8 @@ public class WalkerAI : MonoBehaviour
 		{
 			dir = CreateDir.East;
 			direction = new Vector3(0.1f, 0, 0);
-            xMod = 0;
-            zMod = 0;
+            xMod = transform.parent.position.x;
+            zMod = transform.parent.position.z;
             multiplier = roomWidth;
             //xMod = -7 + (transform.root.position.x * 10);
             //zMod = transform.root.position.z;
@@ -92,25 +101,39 @@ public class WalkerAI : MonoBehaviour
 		// Test Walker movement
 		transform.position += direction;
         if (deathTimer > 1000) { Destroy(gameObject); } else deathTimer++;
-	}
+
+        //roomLength = roomProp.roomLength * 0.01f;
+        //roomWidth = roomProp.roomWidth * 0.01f;
+    }
 
 	void OnTriggerEnter(Collider evnt)
 	{
-		//Debug.Log(evnt);
-	}
-
-	void OnTriggerExit(Collider room)
-	{
-        // Debug.Log(room.GetComponent<Collider>().gameObject.name);
-        if (room.GetComponent<Collider>().gameObject.name == "BuidlingLot")
+        cancel = true;
+        //Debug.Log(gameObject + " is Entering " + evnt);
+        if (evnt.name == "BL_Bounds")
         {
-            Debug.Log("KILL ME!!");
             Destroy(gameObject);
         }
+    }
+
+	void OnTriggerExit(Collider room)
+    {
+        //Debug.Log(gameObject + " is Exiting " + room);
+        int i = FindDirection(dir);
+        string j = room.GetComponent<Collider>().gameObject.tag;
+        //Debug.Log(j);
+        
         //Debug.Log(self);
         //Debug.Log(BuildingController.rooms);
-        int i = FindDirection(dir);
-        DetermineNextRoom(i);
+
+        if (j == "Room")
+        {
+            DetermineNextRoom(i);
+            Destroy(gameObject);
+            //Debug.Log("Am I alive?");
+        }
+
+        //DetermineNextRoom(i);
     }
 
     int FindDirection(CreateDir dir)
@@ -134,40 +157,7 @@ public class WalkerAI : MonoBehaviour
                 break;
         }
         
-        dir = CreateDir.North;
-        //roomBox = gameObject.GetComponent<Collider>();
         roomProp = room.GetComponent<RoomGenerate>();
-        roomLength = roomProp.roomLength;
-        roomWidth = roomProp.roomWidth;
-
-        //if (self.name == "WalkerAI_No")
-        //{
-        //    dir = CreateDir.North;
-        //    direction = new Vector3(0, 0, 0.1f);
-        //    xMod = roomLength;
-        //    zMod = 0;
-        //}
-        //if (self.name == "WalkerAI_So")
-        //{
-        //    dir = CreateDir.South;
-        //    direction = new Vector3(0, 0, -0.1f);
-        //    xMod = 0;
-        //    zMod = 0;
-        //}
-        //if (self.name == "WalkerAI_We")
-        //{
-        //    dir = CreateDir.West;
-        //    direction = new Vector3(-0.1f, 0, 0);
-        //    xMod = ((-10 * roomWidth)-14);
-        //    zMod = transform.root.position.z;
-        //}
-        //if (self.name == "WalkerAI_Ea")
-        //{
-        //    dir = CreateDir.East;
-        //    direction = new Vector3(0.1f, 0, 0);
-        //    xMod = -7 + (transform.root.position.x * 10);
-        //    zMod = transform.root.position.z;
-        //}
         int num = 0;
         return num;
     }
@@ -175,31 +165,66 @@ public class WalkerAI : MonoBehaviour
 	void DetermineNextRoom(int i)
 	{
         // GenerateRoom(0, 0, 0);
-		// Previous Room Attach Script()
-		// Room Type Assign Script()
-		// Room Fit Script()
+        // Previous Room Attach Script()
+        // Room Type Assign Script()
+        // Room Fit Script()
 
-		if (BuildingController.rooms >= 0)
+        if (BuildingController.rooms >= 0)
 		{
-			GameObject roomClone = (GameObject)Instantiate(room, new Vector3(xMod,0,zMod+14), Quaternion.Euler(staticRot), this.transform.parent.transform.parent.transform.parent);
-			roomClone.name = (gameObject.name + BuildingController.rooms);
-            room.transform.position += direction * multiplier;
-            //if (roomInRoom)
-            //{
-            //    roomClone.GetComponent<RoomGenerate>().roomLength = roomProp.GetComponent<RoomGenerate>().roomLength;
-            //    roomClone.GetComponent<RoomGenerate>().roomWidth = roomProp.GetComponent<RoomGenerate>().roomWidth;
-            //}
+            //Debug.Log(direction + " * " + multiplier + " = " + (direction * multiplier));
+            GameObject roomClone = (GameObject)Instantiate(prefab, new Vector3(xMod,0,zMod), Quaternion.Euler(staticRot), transform.parent.transform.parent);
+			roomClone.name = (transform.parent.name + "_" + gameObject.name);
+
+            float rmLngth = roomProp.GetComponent<RoomGenerate>().roomLength;
+            float rmWdth = roomProp.GetComponent<RoomGenerate>().roomWidth;
+
+            float rmCloneW = roomClone.GetComponent<RoomGenerate>().roomLength;
+            float rmCloneL = roomClone.GetComponent<RoomGenerate>().roomWidth;
+
+            if (xOffset)
+            {
+                roomClone.transform.position = transform.parent.position + Vector3.left * rmCloneW * 10;
+            }
+            if (yOffset)
+            {
+                roomClone.transform.position = transform.parent.position + Vector3.forward * rmCloneL * 10;
+            }
+            if (!xOffset || !yOffset)
+            {
+                switch (dir)
+                {
+                    case CreateDir.North:
+                        roomClone.transform.position = transform.parent.position + Vector3.forward * (rmLngth + 1.4f) * 10;
+                        Debug.Log("P:" + transform.parent.position + "C:" + roomClone.transform.position + "--" + rmCloneW);
+                        break;
+                    case CreateDir.East:
+                        roomClone.transform.position = transform.parent.position + Vector3.right * (rmWdth + 1.4f) * 10;
+                        break;
+                    default:
+                        roomClone.transform.position = transform.parent.position + Vector3.left * rmCloneW * 10;
+                        break;
+                }
+            }
+            //roomClone.transform.localScale = Vector3.one * 100;
+            //roomClone.transform.position -= direction * multiplier*100;            
+
+            // Debug.Log(roomProp.name + "_" + direction + " " + xMod + " " + zMod + " " + roomLength + "Long " + roomWidth + "Wide");
+
+            // Debug.Log(roomProp.name + "_" + rmLngth + " " + rmWdth);
             BuildingController.rooms--;
 			BuildingController.AddRoom(roomClone);
-		}
+
+            
+            // MoveRoom(direction, rmWdth, rmLngth);
+        }
 		Destroy(gameObject);
 	}
 
-    void GenerateRoom(int dir, int width, int length)
+    void MoveRoom(Vector3 dir, float width, float length)
     {
         if (BuildingController.rooms >= 0)
         {
-            GameObject roomClone = (GameObject)Instantiate(room, new Vector3(xMod*100, 0, zMod*100), Quaternion.Euler(staticRot), this.transform.parent.transform.parent.transform.parent);
+            GameObject roomClone = (GameObject)Instantiate(room, new Vector3(xMod * 100, 0, zMod * 100), Quaternion.Euler(staticRot), this.transform.parent.transform.parent.transform.parent);
             roomClone.name = (gameObject.name + BuildingController.rooms);
             if (roomInRoom)
             {
