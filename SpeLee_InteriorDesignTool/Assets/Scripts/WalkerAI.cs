@@ -195,7 +195,7 @@ public class WalkerAI : MonoBehaviour
                 {
                     case CreateDir.North:
                         roomClone.transform.position = transform.parent.position + Vector3.forward * (rmLngth + 1.4f) * 10;
-                        Debug.Log("P:" + transform.parent.position + "C:" + roomClone.transform.position + "--" + rmCloneW);
+                        // Debug.Log("P:" + transform.parent.position + "C:" + roomClone.transform.position + "--" + rmCloneW);
                         break;
                     case CreateDir.East:
                         roomClone.transform.position = transform.parent.position + Vector3.right * (rmWdth + 1.4f) * 10;

@@ -26,6 +26,8 @@ public class RoomGenerate : MonoBehaviour {
     public GameObject SouthWalker;
     public GameObject WestWalker;
 
+    private int destroyWalker = 0;
+
 	private SkinnedMeshRenderer NDBlend;
 	private SkinnedMeshRenderer EDBlend;
 	private SkinnedMeshRenderer SDBlend;
@@ -55,6 +57,27 @@ public class RoomGenerate : MonoBehaviour {
         GameObject eastWalker = EastWalker;
         GameObject southWalker = SouthWalker;
         GameObject westWalker = WestWalker;
+
+        destroyWalker = CheckRoomID();
+
+        switch (destroyWalker)
+        {
+            case 1:
+                Object.Destroy(NorthWalker);
+                break;
+            case 2:
+                Object.Destroy(WestWalker);
+                break;
+            case 3:
+                Object.Destroy(SouthWalker);
+                break;
+            case 4:
+                Object.Destroy(EastWalker);
+                break;
+            default:
+                //do nothing
+                break;
+        }
 
 		roomBox = GetComponent<BoxCollider>();
         
@@ -93,6 +116,36 @@ public class RoomGenerate : MonoBehaviour {
 		roomBox.center = new Vector3(-1*(roomWidth * 0.05f)-0.07f,0.09f,-1*(roomLength * 0.05f)+0.07f);
 
         BuildingController.AddRoom(gameObject);
+    }
+
+    private int CheckRoomID()
+    {
+        int i = 0;
+
+        string roomName = name;
+        roomName = roomName.Substring(roomName.Length - 2);
+
+        if (string.Equals(roomName, "No"))
+        {
+            i = 3;
+        }
+
+        if (string.Equals(roomName, "We"))
+        {
+            i = 4;
+        }
+
+        if (string.Equals(roomName, "So"))
+        {
+            i = 1;
+        }
+
+        if (string.Equals(roomName, "Ea"))
+        {
+            i = 2;
+        }
+
+        return i;
     }
 	
 }
