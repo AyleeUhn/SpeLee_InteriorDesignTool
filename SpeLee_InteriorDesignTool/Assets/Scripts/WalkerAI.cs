@@ -169,7 +169,7 @@ public class WalkerAI : MonoBehaviour
         // Room Type Assign Script()
         // Room Fit Script()
 
-        if (BuildingController.rooms >= 0)
+        if (BuildingController.rooms > 0)
 		{
             //Debug.Log(direction + " * " + multiplier + " = " + (direction * multiplier));
             GameObject roomClone = (GameObject)Instantiate(prefab, new Vector3(xMod,0,zMod), Quaternion.Euler(staticRot), transform.parent.transform.parent);
@@ -216,13 +216,13 @@ public class WalkerAI : MonoBehaviour
 
             
             // MoveRoom(direction, rmWdth, rmLngth);
-        }
-		Destroy(gameObject);
+        } else { BuildingController.PrintList(); }
+        Destroy(gameObject);
 	}
 
     void MoveRoom(Vector3 dir, float width, float length)
     {
-        if (BuildingController.rooms >= 0)
+        if (BuildingController.rooms > 0)
         {
             GameObject roomClone = (GameObject)Instantiate(room, new Vector3(xMod * 100, 0, zMod * 100), Quaternion.Euler(staticRot), this.transform.parent.transform.parent.transform.parent);
             roomClone.name = (gameObject.name + BuildingController.rooms);
@@ -235,6 +235,7 @@ public class WalkerAI : MonoBehaviour
             BuildingController.rooms--;
             BuildingController.AddRoom(roomClone);
         }
+        else { BuildingController.PrintList(); }
         Destroy(gameObject);
     }
 }
