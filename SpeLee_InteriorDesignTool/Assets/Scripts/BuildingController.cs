@@ -5,7 +5,7 @@ using UnityEngine;
 public class BuildingController : MonoBehaviour
 {
 
-	static public int rooms = 6;
+	static public int rooms = 3;
     static public int printReady = 1;
 
 	// static public GameObject[] roomManage;
@@ -20,7 +20,6 @@ public class BuildingController : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-        // Debug.Log("I am here");
 		List<GameObject> roomList = new List<GameObject>();
 		// ID Walker object
 	}
@@ -38,13 +37,7 @@ public class BuildingController : MonoBehaviour
 	public static void AddRoom(GameObject room)
 	{
 		roomList.Add(room);
-        Debug.Log("I attempted to add a room");
 	}
-
-    public static void PrintList()
-    {
-        // Debug.Log(roomList);
-    }
 	
 	// Update is called once per frame
 	void Update () 

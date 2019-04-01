@@ -6,7 +6,6 @@ public class RoomGenerate : MonoBehaviour {
 
 	private BoxCollider roomBox;
 	private SkinnedMeshRenderer sMR;
-    public Object bManage;
 	public Rigidbody rb;
 	public int stepBounds = 4;
 	private int step;
@@ -33,8 +32,6 @@ public class RoomGenerate : MonoBehaviour {
 	private SkinnedMeshRenderer EDBlend;
 	private SkinnedMeshRenderer SDBlend;
 	private SkinnedMeshRenderer WDBlend;
-
-    private RoomGenerate manageBuild;
 	
 	void Awake()
 	{
@@ -43,9 +40,8 @@ public class RoomGenerate : MonoBehaviour {
 		NDBlend = NorthDoor.GetComponent<SkinnedMeshRenderer>();
 		EDBlend = EastDoor.GetComponent<SkinnedMeshRenderer>();
 		SDBlend = SouthDoor.GetComponent<SkinnedMeshRenderer>();
-		WDBlend = WestDoor.GetComponent<SkinnedMeshRenderer>();
-
-        // manageBuild = bManage.GetComponent<RoomGenerate>();
+		WDBlend = WestDoor.GetComponent<SkinnedMeshRenderer>(); 
+		
 	}
 	
 	// Use this for initialization
@@ -119,7 +115,6 @@ public class RoomGenerate : MonoBehaviour {
         roomBox.size = new Vector3(0.14f+(roomWidth * 0.1f), 0.18f, 0.14f+(roomLength * 0.1f));
 		roomBox.center = new Vector3(-1*(roomWidth * 0.05f)-0.07f,0.09f,-1*(roomLength * 0.05f)+0.07f);
 
-        
         BuildingController.AddRoom(gameObject);
     }
 
